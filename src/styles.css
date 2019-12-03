@@ -1,1 +1,156 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "../node_modules/@syncfusion/ej2/material.css";
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+body {
+    background-color: rgb(238, 224, 221);
+
+}
+.apidataproject {
+    font-size: 60px;
+}
+
+.navbar-brand {
+    margin-left: 35%;
+    font-size: 35px;
+    
+    
+}
+.headerDiv {
+    background-color: rgb(144, 85, 72);
+}
+
+.btn-huge {
+    width: 100%;
+    display: block;
+    
+}
+.titleDiv {
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+      
+      
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.thtitle {
+    width: 45%;
+    border: 3px solid grey;
+    text-align: center;
+}
+
+.thpic {
+    width: 60%;
+    border: 3px solid grey;
+    text-align: center;
+}
+
+.viewTr {
+    border: 3px solid grey;
+    font-size: 19px;
+}
+
+#delete {
+    margin-left: 40px;
+}
+
+#delete2 {
+    margin-left: 25px;
+}
+
+.plus {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.uploadClass {
+    border: 3px solid grey;
+}
+.tdUpload { 
+    text-align: center;
+}
+
+.urlinput {
+    border: 3px solid grey;
+    width: 350px;
+    margin-top: 50px;
+    height: 35px;
+}
+
+#uploadConfirm {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+#uploadSave{
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+#uploadBack {
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.dataText {
+    margin-right: 150px;
+}
+
+.addnewtext {
+    font-size: 20px;
+    
+}
+
+.buttonFirst {
+    text-align: center;
+}
+
+.idbox {
+    width: 3%;
+}
+.idbox2 {
+    width: 30%;
+}
+.idbox3 {
+    width: 30%;
+}
+.idbox4 {
+    width: 30%;
+}
+.idbox5 {
+    width: 30%;
+}
+
+#editSave {
+    margin-left: 25%;
+}
+
+#editBack {
+    margin-left: 5px;
+}
+.bigtext {
+    text-align: center;
+    font-size: 60px;
+}
+

@@ -1,0 +1,48 @@
+<div class="titleDiv">
+    <h5 class="apidataproject">API</h5>
+</div>
+
+    <div class="plus">
+      <h3 class="addnewtext">  Add a new picture
+        <img src="https://image.flaticon.com/icons/svg/148/148764.svg" height="40px" width="40px" id="plusIcon" routerLink='/dashboard/upload/' routerlinkactive='active'>
+      </h3>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+
+    </div>
+  
+  <div class="buttonFirst" style="text-align:center">
+    <button class="btn btn-primary btn-lg btn-block btn-huge" id="bigButton" (click)='showData()' [disabled]='buttonDisabled' *ngIf='!allData'><h4 class="dataText">Get some data</h4></button>
+  </div>
+ 
+  <div>
+  <table class="tableO">
+     
+    <tr>
+        <td class="thtitle">  <h3>Title</h3>  </td>
+        <td class="thpic">    <h3>Picture</h3> </td>
+    </tr>
+    <tbody *ngFor='let res of allData'>
+      <tr>
+        <td>"{{res?.title}}"</td>
+        <td><img src="{{res?.url}}" height="60px" width="300px">
+        <button class="btn btn-danger btn-lg" id="delete"(click)='dashboardDelete(res.id)'>  Delete </button></td>
+        <button class="btn btn-primary btn-lg" (click)='onClick(res.id)' routerLink="/dashboard/view" routerlinkactive='active'> Edit </button>
+
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
+
+  
+  

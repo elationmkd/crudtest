@@ -1,0 +1,28 @@
+<header class="bigtext">
+
+        EDIT THE DATA
+
+</header>
+
+<div class="maineditDiv" *ngIf="allData">
+<form class="viewForm" (ngSubmit)="butSave(editForm)" #editForm="ngForm">
+    Selected ID is :
+    <input type="text" [(ngModel)]="allData.id" name='id' id="dataalbumId" class="idbox"> <br>
+    Selected URL is : 
+    <input type="text" [(ngModel)]="allData.url" name='url' class="idbox2" id="dataId"> <br>
+    Selected ThumbnailUrl is :
+    <input type="text" [(ngModel)]="allData.thumbnailUrl" class="idbox3" name="thumbnailUrl" id="datathumbnailUrl"> <br>
+    Selected Title is :
+    <input type="text" [(ngModel)]="allData.title" name="title" class="idbox4" id="datatitle"> <br>
+    Selected AlbumID is :
+    <input type="number" [(ngModel)]="allData.albumId" class="idbox5" name="albumId" id="dataaid"> <br>
+</form>
+
+<button type="button" class="btn btn-primary" id="editSave" (click)="butSave(editForm)">Save</button>
+<button class="btn btn-primary" id="editBack" (click)='backEdit()'>Back</button>
+
+
+</div>
+
+
+

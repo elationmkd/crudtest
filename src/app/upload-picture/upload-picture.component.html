@@ -1,0 +1,19 @@
+<div class="uploadDiv">
+
+<table class="uploadClass">
+
+    <td class="tdUpload"> <h3> Upload an image </h3> </td>
+
+</table>
+
+</div>
+
+
+<div class="urlSection">
+    
+    <input type="text" [(ngModel)]='userpic' class="urlinput" placeholder="Enter an image URL for preview">
+    <img src={{userpic}} id="submited">
+    <button class="btn btn-primary" id="uploadSave" (click)="uploadPic()"> Save </button> 
+    <button class="btn btn-primary btn-danger" id="uploadBack" (click)="uploadBackFunc()"> Back </button>
+
+</div>
